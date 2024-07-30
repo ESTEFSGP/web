@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENUNCIAS ANÓNIMAS</title>
+<link rel="stylesheet" href="denuncias.css">
+
+</head>
+<body>
+    
+    <header>
+        <b href="#" class="logo">
+            <img src="logo 1.jpg" alt="logo uno">
+            <img src="logo2.png" alt="logo dos">
+            <img src="logo 3.png" alt="logo tres">
+            <h1 class="SEGURIDAD PUBLICA ISIDRO FABELA">SEGURIDAD PÚBLICA ISIDRO FABELA</h1>
+        </b>
+    </header>
+    <hr class="separator">
+    <div class="contenedor">
+    <div class="documento">
+        <span><h2>Aviso de Privacidad</h2></span>
+        <a href="ruta/del/documento.pdf" class="boton" download>Descargar PDF</a>
+    </div>
+  <center>
+    <form action="denuncia.php" method="POST" class="formulario">
+        <h1>Denunciar es tu derecho, ¡Hazlo valer y protege a tu comunidad!.</h1>
+        <h3>Este no es un servicio de emergencia. Si necesitas ayuda inmediata, por favor llama al 9-1-1.</h3>            
+
+        <label>1. Ubicación y Descripción del incidente:</label><br><br>
+        <label>Coloque el tipo de delito que desea denunciar:</label>
+        <input type="text" placeholder="Tipo de delito" name="delito"><br>
+        <label>Fecha y hora del incidente:</label>
+        <input type="datetime-local" name="feho"><br>
+        <label>Domicilio:</label>
+        <input type="text" placeholder="Domicilio" name="domicilio"><br>
+        <label>Colonia:</label>
+        <input type="text" placeholder="Colonia" name="colonia"><br>
+        <label>Descripción del lugar:</label>
+        <input type="text" placeholder="Descripción" name="descrip"><br>
+        <label>Entre las calles:</label>
+        <input type="text" placeholder="Entre calles" name="ecalles"><br>
+        <br>
+        <label>2. Descripción del delito:</label><br>
+        <textarea placeholder="Describa los hechos con el mayor detalle posible. Recuerde, cuanto más detallada sea la información, más efectiva será la denuncia." name="descd" rows="5" cols="50"></textarea><br>
+        <br>
+        <label>3. Si dispone de alguno de los datos siguientes sobre el presunto autor del delito, por favor, complete la casilla correspondiente.</label><br>
+        <label>Nombre o alias</label>
+        <input type="text" placeholder="Nombre o alias" name="nomre"><br>
+        <label>Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="sexo" value="femenino">
+        <label for="femenino">Femenino</label><br>
+        <label>Edad (aproximada):</label>
+        <input type="number" placeholder="Edad" name="edad"><br>
+        <label>Estatura (aproximada):</label>
+        <input type="number" placeholder="Estatura" name="estatura"><br>
+        <label>Descripción física:</label><br>
+        <textarea placeholder="Por favor, describa las características físicas como color de cabello, tatuajes, etc. Recuerde que una descripción detallada es crucial para la denuncia." name="descf" rows="5" cols="50"></textarea><br>
+    </center>
+            <div class="botones-container">
+                <button type="submit" class="boton btn-enviar">Enviar</button>
+                <a href="index.html" class="boton btn-volver">Volver</a>
+              </div>  
+        </form>  
+    </div>    
+</body>
+</html>
