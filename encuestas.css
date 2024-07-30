@@ -1,0 +1,124 @@
+body{
+    font-family: sans-serif;
+    margin: 30px;
+
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+b{
+    text-decoration: none;
+    color:#001f3f ;
+}
+
+header {
+    display: flex;
+    min-height: 50px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.separator {
+    border: none;
+    height: 5px;
+    background-color: #001f3f;
+    margin: -5px 0;
+}
+
+.documento {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.documento span {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.boton {
+    background-color: red;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 100px;
+    margin-right: 35px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: aliceblue;
+
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.botones-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.boton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-enviar {
+    background-color: red;
+    color: white;
+}
+.btn-volver {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-volver:hover, .btn-enviar:hover {
+    opacity: 0.8;
+}
